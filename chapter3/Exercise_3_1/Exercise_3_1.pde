@@ -12,6 +12,7 @@ void setup() {
 
 void draw() {
     background(255);
-    circle(ballOne.x, ballTwo.x, 2);
-    circle(ballTwo.x, ballTwo.x, 2);
+    circle(ballOne.x, ballTwo.y, 2);
+    circle(ballTwo.x, ballTwo.y, 2);
+    line(ballOne.x, ballOne.y, ballTwo.x, ballTwo.y);
 }
