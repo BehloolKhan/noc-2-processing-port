@@ -1,5 +1,6 @@
 PVector ballOne;
 PVector ballTwo;
+float angle = 0;
 
 
 void setup() {
@@ -15,8 +16,10 @@ void draw() {
     fill(175);
     pushMatrix();
     translate(width/2, height/2);
+    rotate(angle);
     circle(ballOne.x, ballOne.y, 20);
     circle(ballTwo.x, ballTwo.y, 20);
-    line(ballOne.x, ballOne.y, ballTwo.x, ballTwo.y);
+    line(ballOne.x, ballOne.y+10, ballTwo.x, ballTwo.y-10);
     popMatrix();
+    angle += 0.1;
 }
