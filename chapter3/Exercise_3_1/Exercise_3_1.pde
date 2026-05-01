@@ -13,6 +13,8 @@ void setup() {
 void draw() {
     background(255);
     fill(175);
+    pushMatrix();
+    translate(width/2, height/2);
     circle(ballOne.x, ballOne.y, 20);
     circle(ballTwo.x, ballTwo.y, 20);
     line(ballOne.x, ballOne.y, ballTwo.x, ballTwo.y);
