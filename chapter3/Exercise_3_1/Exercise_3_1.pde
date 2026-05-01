@@ -14,6 +14,7 @@ void setup() {
 void draw() {
     background(255);
     fill(175);
+    strokeWeight(2);
     pushMatrix();
     translate(width/2, height/2);
     rotate(angle);
