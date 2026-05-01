@@ -18,4 +18,5 @@ void draw() {
     circle(ballOne.x, ballOne.y, 20);
     circle(ballTwo.x, ballTwo.y, 20);
     line(ballOne.x, ballOne.y, ballTwo.x, ballTwo.y);
+    popMatrix();
 }
