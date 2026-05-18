@@ -30,4 +30,8 @@ class Mover {
         circle(location.x, location.y, 5);
     }
 
+    public double getMass() {
+        return mass;
+    }
+
 }
