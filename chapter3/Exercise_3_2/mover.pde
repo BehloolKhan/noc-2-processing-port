@@ -25,7 +25,10 @@ class Mover {
     public void update() {
         velocity.add(acceleration);
         location.add(velocity);
-        
+
+        aAcceleration = acceleration.y;
+        aVelocity += aAcceleration;
+
         acceleration.mult(0);
     }
 
