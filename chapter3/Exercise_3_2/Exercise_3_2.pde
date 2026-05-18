@@ -1,10 +1,10 @@
 Mover ball;
-float G = (float) 0.5;
+float G = (float) 0.1;
 
 void setup() {
     size(640, 360);
     ball = new Mover(new PVector(0, height/2), 0.5);
-    ball.applyForce(new PVector(1, -1));
+    ball.applyForce(new PVector(2.5, -2.5));
 }
 
 void draw() {
