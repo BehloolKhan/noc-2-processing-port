@@ -18,5 +18,12 @@ class Mover {
         acceleration.add(copyForce);
     }
 
-    public void 
+    public void update() {
+        velocity.add(acceleration);
+        location.add(velocity);
+        
+        acceleration.mult(0);
+    }
+
+    
 }
