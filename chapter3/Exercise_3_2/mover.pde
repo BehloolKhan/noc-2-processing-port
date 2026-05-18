@@ -27,7 +27,7 @@ class Mover {
 
     public void draw() {
         fill(175);
-        circle(location.x, location.y, 5);
+        circle(location.x, location.y, 10);
     }
 
     public double getMass() {
