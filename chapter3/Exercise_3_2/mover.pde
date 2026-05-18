@@ -25,5 +25,9 @@ class Mover {
         acceleration.mult(0);
     }
 
-    
+    public void draw() {
+        fill(175);
+        circle(location.x, location.y, 5);
+    }
+
 }
