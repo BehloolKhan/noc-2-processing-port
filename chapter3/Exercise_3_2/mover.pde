@@ -36,8 +36,15 @@ class Mover {
 
     public void draw() {
         fill(175);
+
+        pushMatrix();
+
+        translate(location.x, location.y);
         rectMode(CENTER);
-        rect(location.x, location.y, 10, 10);
+        rotate(angle);
+        rect(0, 0, 10, 10);
+        
+        popMatrix();
     }
 
     public double getMass() {
