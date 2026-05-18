@@ -12,5 +12,11 @@ class Mover {
         this.mass = mass_;
     }
 
-    
+    public void applyForce(PVector force) {
+        PVector copyForce = PVector.mult(force, 1);
+        copyForce.div((float) mass); //resultant acceleration
+        acceleration.add(copyForce);
+    }
+
+    public void 
 }
