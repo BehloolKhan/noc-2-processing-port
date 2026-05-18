@@ -1,9 +1,9 @@
 class Mover {
 
-    PVector Location;
+    PVector location;
     PVector acceleration;
     PVector velocity;
-    float mass;
+    double mass;
 
     public Mover(PVector location_, double mass_) {
         this.location = location_;
