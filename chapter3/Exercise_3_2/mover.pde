@@ -30,6 +30,8 @@ class Mover {
         aVelocity += aAcceleration;
 
         acceleration.mult(0);
+
+        angle += aVelocity;
     }
 
     public void draw() {
