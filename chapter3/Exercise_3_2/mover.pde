@@ -26,8 +26,9 @@ class Mover {
         velocity.add(acceleration);
         location.add(velocity);
 
-        aAcceleration = acceleration.y;
+        aAcceleration = acceleration.y/10.0;
         aVelocity += aAcceleration;
+        aVelocity = constrain(aVelocity,-0.1,0.1);
 
         acceleration.mult(0);
 
@@ -42,8 +43,8 @@ class Mover {
         translate(location.x, location.y);
         rectMode(CENTER);
         rotate(angle);
-        rect(0, 0, 10, 10);
-        
+        rect(0, 0, 20, 20);
+
         popMatrix();
     }
 
