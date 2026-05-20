@@ -28,13 +28,13 @@ class Mover {
 
     public void draw() {
         fill(175);
+        strokeWeight(5);
 
         pushMatrix();
-
         translate(location.x, location.y);
         rectMode(CENTER);
         rect(0, 0, 20, 20);
-
+        line(0, 0, velocity.x, velocity.y);
         popMatrix();
     }
 
